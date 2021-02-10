@@ -18,5 +18,6 @@ public class StudentService {
     }
     public void save(Student student){studentRepository.save(student);}
     public void delete(Student student){studentRepository.delete(student);}
+    public Iterable<Student>gettAll(){ return  studentRepository.findAll();}
 
 }
