@@ -16,4 +16,5 @@ public class StudentService {
     public Optional<Student> get(int id){
        return( studentRepository.findById(id));
     }
+    public void save(Student student){studentRepository.save(student);}
 }
