@@ -25,4 +25,8 @@ public class RestStudent {
     public void delete(@RequestBody Student student){
         studentService.delete(student);
     }
+    @GetMapping("/all")
+    public Iterable<Student>getAll(){
+        return studentService.gettAll();
+    }
 }
