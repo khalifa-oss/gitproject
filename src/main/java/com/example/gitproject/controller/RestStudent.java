@@ -21,4 +21,8 @@ public class RestStudent {
     public void create(@RequestBody Student student){
         studentService.save(student);
     }
+    @DeleteMapping("/delete")
+    public void delete(@RequestBody Student student){
+        studentService.delete(student);
+    }
 }
